@@ -1,0 +1,48 @@
+nav{
+	flex-grow: 1;
+	border:  solid 1px black;
+}
+
+
+nav ul{
+	display: flex;
+	list-style : none; 
+	padding :0px;
+	margin : 0px;
+}
+
+
+
+nav ul a{
+	flex-grow: 1;
+}
+
+
+nav ul a li{
+	padding: 17px;
+	text-align:  center;
+	border: solid 1px black;
+	list-style: none;
+}
+
+
+
+nav ul a:link{
+	color : white;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+nav ul a:hover{
+	color : #77A1D4;
+}
+nav ul a:focus{
+	background: #77A1D4;
+	color : white;
+}
+nav ul a:active{
+	color : white;
+	font-weight: bold;
+}
+nav ul a:visited{
+	color : white;
+}
