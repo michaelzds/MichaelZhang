@@ -1,6 +1,6 @@
 nav{
 	flex-grow: 1;
-	border:  solid 1px black;
+	outline:  solid 1px black;
 }
 
 
@@ -21,7 +21,7 @@ nav ul a{
 nav ul a li{
 	padding: 17px;
 	text-align:  center;
-	border: solid 1px black;
+	outline:  solid 1px black;
 	list-style: none;
 }
 
