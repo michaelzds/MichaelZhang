@@ -1,18 +1,80 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Personal Site</title>
 	<link href="PersonalSite/CSS/Heading.css" rel="stylesheet" type="text/css"/>
 	<style>
 		body{
-			background-color : #80BDD6;
+			background-color : #80BDD6;	
+			/*
+			background-image : url('PersonalSite/Images/BGImage.JPG');
+			*/
+		}
+
+		.thoughts {
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+
+		#container {
+        text-align: center;
+      }
+
+      .video {
+	    position: relative;
+	    padding-bottom: 27%;
+	}
+
+	.video iframe {
+	    width: 100%;
+	    height: 100%;
+	}
+	.video-layout {
+	    max-width: 1300px;
+	    height: 300px;
+	    border: 1px solid green;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	#vid-left {
+	    float: left;
+	    padding:20px;
+	    height: 300px;
+	    width:33%;
+	    box-sizing:border-box;
+	}
+	#vid-mid {
+	    float: left;
+	    padding:20px;
+	    height: 300px;
+	    width:33%;
+	    box-sizing:border-box;
+	}
+	#vid-right {
+	    float: left;
+	    padding:20px;
+	    height: 300px;
+	    width:33%;
+	    box-sizing:border-box;
+	}
+
+		.row {
+		  display: flex;
+		}
+
+		.column {
+		  flex: 50%;
+		  padding: 5px;
 		}
 	</style>
+
+
 </head>
 <body>
+
 	<div id="wrap">
 		<header>
 			<nav>
@@ -20,61 +82,86 @@
 					<a href="index.html"><li>HOME</li></a>
 					<a href="about.html"><li>ABOUT</li></a>
 					<a href="contact.html"><li>CONTACT</li></a>
-					<a href="hobbies.html"><li>HOBBIES</li></a>
-					<a href="journey.html"><li>JOURNEY</li> </a>
+					<a href="hobbies.html"><li>HOBBY</li></a>
 				</ul>
 			</nav>
 		</header>
-		<div id="mainArea">
-			<h1> HOBBIES </h1>
-			<h2> The Art of Tennis </h2>
-			<p>
-				Tennis a personal hobby of mine. I also love to make tennis videos.
-			</p>
+    </div>
 
-			<table border="1" width="760px">
+
+<div id="intro" class="bg-image shadow-2-strong">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
+        <div class="container d-flex align-items-center justify-content-center text-center h-100">
+        </div>
+      </div>
+
+		<div id="mainArea">
+			<h1> HOBBY </h1>
+			<h2>Tennis </h2>
+
+		<div id="container">
+
+			<div class="row">
+			  <div class="column">
+			    <img src="PersonalSite/Images/tennisTeam.JPG" alt="USTA Tournament" style="width:100%">
+			  </div>
+			  <div class="column">
+			    <img src="PersonalSite/Images/groupTeam.JPG" alt="Forest" style="width:100%">
+			  </div>
+			  <div class="column">
+			    <img src="PersonalSite/Images/champTeam.JPG" alt="Tennis Team" style="width:100%">
+			  </div>
+			</div>
+			
+			<!--
+			 <img src="PersonalSite/Images/groupTeam.JPG" alt="Group" width="500" height="350">
+			-->
+
+			<br>
+
+
+
+			<table style="margin-top: 30px"; class = "thoughts" border="1" width="760px" >
 				<tr>
-					<td> The beauty of tennis isn't quantifiable. It lies in the players, the games, and the times. While the number of ways players can perform a seemingly similar sequence of motions is enormous, is there a most optimized approach? The spectacular success of Roger Federer and his fluid strokes that mostly optimize the work of physical laws in the human body during the interaction between the racquet and the ball is a wonderful example.  
+					<td> I have been playing tennis since 4th grade. It is the sport that I value the most because it has taught me so many things through the years, and the most precious one is the sportsmanship of being gracious in victories and defeats. To me, tennis is more than winning those sets, or the game becomes a beat without melody. It is about playing the "right" way, valuing the game itself, and overcoming myself. In the long run, that approach has helped me to enjoy the games and to find myself in the big picture.
 					</td>
 				</tr>
 
 			</table>
 
-			<p>
-				Below are my videos
+			<br>
+
+			<img src="PersonalSite/Images/mDuel.JPG" alt="Hudson River Tennis" width="600" height="500" style="margin-top: 25px";>
+
+			<p style="margin-top: 25px";>
+				Below are the videos I made.
 			</p>
 
-			<section id="Video2">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/gJaNokaeRxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-
-			<section id="Video1">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/OgtFOBuZHWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-
-			<section id="Video0">
+		
+		<div class="video-layout">
+			<div class="video">
+				<div id="vid-left">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/XECM7EdDrYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-
-
-			<!-- 
-			<h2> My Photoshop Graphic</h2>
-			<section id="photoShop">
-				<img src="PersonalSite/Images/MrBean.jpg" width="500" height="370">
-			</section>
-			<section id="gif">
-				<img src="PersonalSite/Images/Simpson.gif" width="500" height="370">
-			</section>
-			-->
-
-			
+				</div>
+				<div id="vid-mid">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/gJaNokaeRxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div id="vid-right">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/OgtFOBuZHWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
 		</div>
+	</div>
+
+		</div>
+
 		<footer>
 			<section id="video">
 			</section>
 		</footer>
 	</div>
-</body>
+
+	</body>
 </html>
 
 
